@@ -1,0 +1,57 @@
+{
+    "kind": "collectionType",
+    "collectionName": "projects",
+    "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "Project",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title"
+        },
+        "company": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "servicesProvided": {
+            "type": "component",
+            "repeatable": true,
+            "component": "entity.tags"
+        },
+        "thumbnail": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files"
+            ]
+        },
+        "testimonial": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::testimonial.testimonial",
+            "mappedBy": "project"
+        },
+        "services": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::service.service",
+            "mappedBy": "projects"
+        },
+        "date": {
+            "type": "date"
+        }
+    }
+}

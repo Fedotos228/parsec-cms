@@ -1,0 +1,28 @@
+{
+    "collectionName": "components_entity_abouts",
+    "info": {
+        "displayName": "defaultBlock",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "subtitle": {
+            "type": "string"
+        },
+        "title": {
+            "type": "text"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files"
+            ]
+        },
+        "description": {
+            "type": "text"
+        }
+    }
+}
