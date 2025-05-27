@@ -13,13 +13,7 @@ export default [
       },
     },
   },
-  {
-    name: 'strapi::cors',
-    config: {
-      headers: '*',
-      origin: process.env.MY_CORS.split(", ") || ''
-    }
-  },
+  'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
