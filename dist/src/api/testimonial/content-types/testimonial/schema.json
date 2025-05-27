@@ -1,0 +1,36 @@
+{
+    "kind": "collectionType",
+    "collectionName": "testimonials",
+    "info": {
+        "singularName": "testimonial",
+        "pluralName": "testimonials",
+        "displayName": "Testimonial",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "files",
+                "images"
+            ]
+        },
+        "person": {
+            "type": "string"
+        },
+        "project": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::project.project",
+            "inversedBy": "testimonial"
+        },
+        "content": {
+            "type": "text"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_entity_partners",
+  "info": {
+    "displayName": "heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "blocks"
+    }
+  }
+}

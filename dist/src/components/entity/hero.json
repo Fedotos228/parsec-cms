@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_entity_heroes",
+    "info": {
+        "displayName": "hero",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "heading": {
+            "type": "blocks"
+        },
+        "video": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "files",
+                "videos"
+            ]
+        }
+    }
+}
