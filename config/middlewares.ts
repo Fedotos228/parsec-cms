@@ -17,7 +17,7 @@ export default [
     name: 'strapi::cors',
     config: {
       headers: '*',
-      origin: [process.env.PRODUCTION_CORS, ...process.env.MY_CORS.split(',')],
+      origin: process.env.CORS_ORIGIN,
     }
   },
   'strapi::poweredBy',
