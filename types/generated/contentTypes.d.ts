@@ -553,8 +553,8 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     services: Schema.Attribute.Relation<'manyToMany', 'api::service.service'>;
-    servicesProvided: Schema.Attribute.Component<'entity.tags', true>;
     slug: Schema.Attribute.UID<'title'>;
     testimonial: Schema.Attribute.Relation<
       'oneToOne',

@@ -24,11 +24,6 @@
         "description": {
             "type": "text"
         },
-        "servicesProvided": {
-            "type": "component",
-            "repeatable": true,
-            "component": "entity.tags"
-        },
         "thumbnail": {
             "type": "media",
             "multiple": false,
@@ -52,6 +47,11 @@
         },
         "date": {
             "type": "date"
+        },
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.seo"
         }
     }
 }
