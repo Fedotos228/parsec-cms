@@ -21,7 +21,7 @@ exports.default = [
         name: 'strapi::cors',
         config: {
             headers: '*',
-            origin: [process.env.CORS_ORIGIN, process.env.CLIENT_URL],
+            origin: process.env.CLIENT_URL,
         }
     },
     'strapi::poweredBy',
